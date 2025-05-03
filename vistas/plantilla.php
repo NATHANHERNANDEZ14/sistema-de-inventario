@@ -68,9 +68,12 @@ Cuerpo Documento
 ===================================================== -->
 
 <body class="hold-transition skin-blue sidebar-collapse sidebar-mini">
-    <!-- Site wrapper -->
-    <div class="wrapper">
+  
         <?php 
+
+        if(isset($_SESSION["iniciarSesion"]) && $_SESSION["iniciarSesion"] == "ok"){
+
+        echo ' <div class="wrapper">';
          
          /*======================================
                         CABEZOTE
@@ -109,15 +112,15 @@ Cuerpo Documento
           /*======================================
                        FOOTER
          =======================================*/
-         include "modulos/footer.php"
+         include "modulos/footer.php";
 
+         echo '</div>';
 
+        } else {
+            include "modulos/login.php";
+        }
         ?>
-
-    </div>
-    <!-- ./wrapper -->
 
     <script src="vistas/js/plantilla.js"></script>
 </body>
-
 </html>
