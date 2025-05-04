@@ -1,8 +1,12 @@
 <?php
 
-class ControladorPlantilla {
-    public function ctrPlantilla() {
+class ControladorPlantilla{
 
-        include "vistas/plantilla.php";
-    }
+	static public function ctrPlantilla(){
+
+		include "vistas/plantilla.php";
+
+	}	
+
+
 }

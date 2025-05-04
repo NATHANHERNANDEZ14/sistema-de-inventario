@@ -27,7 +27,7 @@ class ControladorUsuarios{
 					if($respuesta["estado"] == 1){
 
 						$_SESSION["iniciarSesion"] = "ok";
-						$_SESSION["id"] = $respuesta["id"];
+						$_SESSION["id"] = $respuesta["id"];	
 						$_SESSION["nombre"] = $respuesta["nombre"];
 						$_SESSION["usuario"] = $respuesta["usuario"];
 						$_SESSION["foto"] = $respuesta["foto"];
